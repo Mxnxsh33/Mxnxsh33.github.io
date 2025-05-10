@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.E.A College of Engineering and Technology</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center">
+        <img src="https://campushunt.in/collegelogo/sea-clg-of-eng-and-technology-logo-2041.jpg" alt="SEACET Logo" class="h-12 mr-4">
+        <h1 class="text-2xl font-bold">S.E.A College of Engineering and Technology</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a>
+        <a href="#about" class="hover:text-yellow-400 transition duration-300">About</a>
+        <a href="#courses" class="hover:text-yellow-400 transition duration-300">Courses</a>
+        <a href="#facilities" class="hover:text-yellow-400 transition duration-300">Facilities</a>
+        <a href="#placements" class="hover:text-yellow-400 transition duration-300">Placements</a>
+        <a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a>
+      </nav>
+      <button class="md:hidden focus:outline-none" id="menu-toggle">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-800 text-white">
+      <a href="#home" class="block py-2 px-4 hover:bg-blue-700">Home</a>
+      <a href="#about" class="block py-2 px-4 hover:bg-blue-700">About</a>
+      <a href="#courses" class="block py-2 px-4 hover:bg-blue-700">Courses</a>
+      <a href="#facilities" class="block py-2 px-4 hover:bg-blue-700">Facilities</a>
+      <a href="#placements" class="block py-2 px-4 hover:bg-blue-700">Placements</a>
+      <a href="#contact" class="block py-2 px-4 hover:bg-blue-700">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative">
+    <div class="carousel w-full h-screen md:h-96 overflow-hidden">
+      <div class="carousel-item absolute w-full h-full bg-cover bg-center" style="background-image: url('https://seacet.edu.in/images/clgbldg.jpg');"></div>
+      <div class="carousel-item absolute w-full h-full bg-cover bg-center" style="background-image: url('https://www.collegedhundo.com/images/college/College%20Building%20View%20of%20SEA%20College%20of%20Engineering%20and%20Technology%20Bangalore_Campus-View.jpg');"></div>
+      <div class="carousel-item absolute w-full h-full bg-cover bg-center" style="background-image: url('https://seacet.edu.in/wp-content/uploads/2023/08/library.jpg');"></div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60">
+      <div class="text-center text-white animate-fadeIn">
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-4">Welcome to SEACET</h2>
+        <p class="text-xl md:text-2xl mb-6">Empowering Future Engineers with World-Class Education</p>
+        <a href="#contact" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 transform hover:scale-105">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-8 animate-slideIn">About SEACET</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://seacet.edu.in/images/clgbldg.jpg" alt="College Building" class="w-full md:w-1/2 rounded-lg shadow-lg">
+        <div>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            S.E.A College of Engineering and Technology (SEACET), established in 2007 by Founder Chairman Sri. A. Krishnappa, is a premier institution under the South East Asian Education Trust. Approved by AICTE and affiliated with VTU, SEACET offers a blend of modern and traditional education, fostering innovation and holistic development.
+          </p>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-blue-900 mb-4">Our Vision</h3>
+              <p class="text-gray-700">To be a global leader in technical education, nurturing innovation and ethical values.</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-blue-900 mb-4">Our Mission</h3>
+              <p class="text-gray-700">To provide quality education, promote research, and develop skilled professionals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-8 animate-slideIn">Our Courses</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-semibold text-blue-900 mb-4">Undergraduate Programs</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Computer Science and Engineering</li>
+            <li>Electronics and Communication</li>
+            <li>Mechanical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Artificial Intelligence and Machine Learning</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-semibold text-blue-900 mb-4">Postgraduate Programs</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>M.Tech in VLSI Design</li>
+            <li>M.Tech in Computer Science</li>
+            <li>Master of Business Administration (MBA)</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-semibold text-blue-900 mb-4">Research Programs</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Ph.D. in Computer Science</li>
+            <li>Ph.D. in Mechanical Engineering</li>
+            <li>Ph.D. in Electronics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-8 animate-slideIn">Our Facilities</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center transform hover:scale-105 transition duration-300">
+          <img src="https://www.collegedhundo.com/images/college/College%20Building%20View%20of%20SEA%20College%20of%20Engineering%20and%20Technology%20Bangalore_Campus-View.jpg" alt="Campus View" class="h-32 w-full object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Library</h3>
+          <p class="text-gray-700">Over 23,000 books and digital resources for academic excellence.</p>
+        </div>
+        <div class="text-center transform hover:scale-105 transition duration-300">
+          <i class="fas fa-bed fa-3x text-blue-900 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Hostel</h3>
+          <p class="text-gray-700">Safe and comfortable accommodation for 930 students.</p>
+        </div>
+        <div class="text-center transform hover:scale-105 transition duration-300">
+          <i class="fas fa-bus fa-3x text-blue-900 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Transport</h3>
+          <p class="text-gray-700">Fleet of 35 buses for convenient campus commuting.</p>
+        </div>
+        <div class="text-center transform hover:scale-105 transition duration-300">
+          <i class="fas fa-hospital fa-3x text-blue-900 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Hospital</h3>
+          <p class="text-gray-700">On-campus medical care for students and staff.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placements Section -->
+  <section id="placements" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-8 animate-slideIn">Placements</h2>
+      <p class="text-lg text-gray-700 text-center mb-6">
+        Our dedicated placement cell ensures students secure positions in top companies like IBM, Wipro, and Infosys.
+      </p>
+      <div class="flex justify-center space-x-6">
+        <img src="https://www.hatchwise.com/wp-content/uploads/2023/01/image10-1-1-768x586.jpg.webp" alt="IBM" class="h-12">
+        <img src="https://images.ctfassets.net/o7xu9whrs0u9/7Clpp7emR2AOm9pea17ydJ/3f46624331ad155a529953e0f3a0e0fb/wipro-logo.png" alt="Wipro" class="h-12">
+        <img src="https://www.ersbio.co.za/wp-content/uploads/2024/11/infosys-logo.png.original.png" alt="Infosys" class="h-12">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-8 animate-slideIn">Contact Us</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-4">Get in Touch</h3>
+          <p class="text-gray-700 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Ayyappa Nagar, K.R. Puram, Bangalore-560049</p>
+          <p class="text-gray-700 mb-2"><i class="fas fa-phone-alt mr-2"></i>+91 7353945999</p>
+          <p class="text-gray-700 mb-2"><i class="fas fa-envelope mr-2"></i>seaeduinfo@seaedu.ac.in</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-4">Send a Message</h3>
+          <form>
+            <input type="text" placeholder="Name" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900">
+            <input type="email" placeholder="Email" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900">
+            <textarea placeholder="Message" rows="4" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"></textarea>
+            <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition duration-300">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot Section -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <button id="chatbot-toggle" class="bg-blue-900 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition duration-300">
+      <i class="fas fa-comment-alt"></i>
+    </button>
+    <div id="chatbot-container" class="hidden bg-white rounded-lg shadow-xl w-80 md:w-96">
+      <div class="chatbot-container p-4">
+        <h1 class="text-2xl font-bold text-blue-900 mb-4">SEACET Chatbot</h1>
+        <div class="chat-section">
+          <div id="chatOutput" class="chat-box bg-gray-50 p-4 rounded-lg h-64 overflow-y-auto">
+            <div class="message bot bg-blue-900 text-white p-2 rounded-lg">Welcome to SEACET Chatbot! Ask me about courses, admissions, facilities, placements, or anything else about S.E.A College of Engineering and Technology.</div>
+          </div>
+          <div class="input-section mt-4">
+            <textarea id="userInput" placeholder="Type your question here..." rows="2" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"></textarea>
+            <div id="predictions-container" class="my-2">
+              <div class="predictions flex flex-wrap gap-2" id="predictions"></div>
+            </div>
+            <div class="button-group flex space-x-2">
+              <button id="sendBtn" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800">Send</button>
+              <button id="clearBtn" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600">Clear</button>
+              <button id="voiceBtn" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800">🎤</button>
+            </div>
+          </div>
+        </div>
+        <div class="history-section mt-4">
+          <button id="toggleHistoryBtn" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 w-full">Show History</button>
+          <div id="responseHistory" class="history-box bg-gray-50 p-4 rounded-lg mt-2 hidden"></div>
+        </div>
+        <div class="feedback-section mt-4 flex items-center gap-2 hidden" id="feedbackSection">
+          <p class="text-sm">Was this response helpful?</p>
+          <button id="feedbackYes" class="bg-blue-900 text-white px-3 py-1 rounded-lg hover:bg-blue-800 text-sm">Yes</button>
+          <button id="feedbackNo" class="bg-gray-500 text-white px-3 py-1 rounded-lg hover:bg-gray-600 text-sm">No</button>
+        </div>
+        <div class="dark-mode-toggle flex items-center mt-4">
+          <label for="darkModeToggle" class="mr-2">Dark Mode</label>
+          <div class="switch relative inline-block w-12 h-6">
+            <input type="checkbox" id="darkModeToggle" class="opacity-0 w-0 h-0">
+            <span class="slider round absolute inset-0 bg-gray-400 rounded-full cursor-pointer transition"></span>
+          </div>
+        </div>
+        <div id="loadingIndicator" class="loading flex flex-col items-center mt-4 hidden">
+          <div class="progress-bar w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div class="progress bg-blue-900 h-full animate-pulse"></div>
+          </div>
+          <p class="text-sm text-gray-700 mt-2">Loading...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">S.E.A College</h3>
+          <p class="text-gray-300">Committed to excellence in technical education since 2007.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About Us</a></li>
+            <li><a href="#courses" class="hover:text-yellow-400 transition duration-300">Courses</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Connect with Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-yellow-400 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-300 hover:text-yellow-400 transition duration-300"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="textSCALE-400 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-gray-300 mt-8">© 2025 S.E.A College of Engineering and Technology. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
